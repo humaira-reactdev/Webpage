@@ -1,0 +1,10 @@
+body{
+    background: url(../public/images/page-bg-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+a{
+    display: inline-block;
+}
