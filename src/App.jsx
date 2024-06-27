@@ -9,18 +9,21 @@ import Work from './Pages/Work'
 import Blog from './Pages/Blog'
 import Contact from './Pages/Contact'
 import NotFound from './Pages/NotFound'
+import LayoutOne from './Layout/LayoutOne'
 
 function App() {
   const route=createBrowserRouter(
     createRoutesFromElements(
       <Route>
-        <Route path='/' element={<Home/>}/>
-        <Route path='/about' element={<About/>}/>
-        <Route path='/resume' element={<Resume/>}/>
-        <Route path='/work' element={<Work/>}/>
-        <Route path='/blog' element={<Blog/>}/>
-        <Route path='/contact' element={<Contact/>}/>
-        <Route path='*' element={<NotFound/>}/>
+        <Route path='/' element={<LayoutOne/>}>
+          <Route index element={<Home/>}/>
+          <Route path='/about' element={<About/>}/>
+          <Route path='/resume' element={<Resume/>}/>
+          <Route path='/work' element={<Work/>}/>
+          <Route path='/blog' element={<Blog/>}/>
+          <Route path='/contact' element={<Contact/>}/>
+          <Route path='*' element={<NotFound/>}/>
+        </Route>
       </Route>
     )
   )
