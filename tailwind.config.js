@@ -14,7 +14,8 @@ export default {
       center: true,
     },
     fontFamily: {
-      'poppins': ["Poppins", "sans-serif"],
+      'robotoslab': ["Roboto Slab", 'serif'],
+      'poppins': ["Poppins", 'sans-serif']
     }
   },
   plugins: [],
