@@ -4,6 +4,7 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa6";
+import { LuHardDriveDownload } from "react-icons/lu";
 
 
 const HomeComponent = () => {
@@ -19,7 +20,7 @@ const HomeComponent = () => {
           <SocialButtons icons={<FaInstagram className='text-[#E12A72]'/>}/>
           <SocialButtons icons={<FaLinkedinIn className='text-[#0A58CA]' />}/>
         </div>
-        <button className=''>Download</button>
+        <button className='flex gap-[5px] text-[18px] py-[12px] px-[30px] bg-gradient-to-r from-[#fa5252] to-[#dd2476] text-white rounded-[30px] font-poppins'><LuHardDriveDownload className='text-[23px]'/>Download Cv</button>
 
       </div>
       
